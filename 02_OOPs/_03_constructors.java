@@ -24,10 +24,6 @@
 // 3. Copy constructor: A constructor that initializes an object using another 
 // object of the same class is called a copy constructor.
 
-// 4. Constructor chaining: Calling one constructor from another constructor is 
-// called constructor chaining.
-
-
 class Student {
     String name;
     int age;
@@ -42,8 +38,16 @@ class Student {
 
     // Parameterized Constructor
     public Student(String name, int age) {
+        System.out.println("Parameterized Constructor called!");
         this.name = name;
         this.age = age;
+    }
+
+    // Copy Constructor
+    public Student(Student s){
+        System.out.println("Copy Constructor called!");
+        this.name = s.name;
+        this.age = s.age;
     }
 
     // Method
@@ -60,5 +64,8 @@ public class _03_constructors {
 
         Student s2 = new Student("John", 25);
         s2.dispInfo();
+
+        Student s3 = new Student(s2);
+        s3.dispInfo();
     }    
 }
