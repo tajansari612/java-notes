@@ -69,3 +69,11 @@ public class _03_constructors {
         s3.dispInfo();
     }    
 }
+
+
+// Destructor
+// Java does not have destructors. Java automatically performs garbage collection.
+// Garbage collection is the process of reclaiming the runtime unused memory.
+// In other words, it is the process of destroying the objects that are no longer
+// required by the program.
+
