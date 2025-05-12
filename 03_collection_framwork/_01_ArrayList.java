@@ -10,14 +10,25 @@ import java.util.Collections;
 // 4. Can store duplicate values
 // 5. Can store null values (we can't store null values in primitive 
 // data types(in array))
+
+// Time Complexity:
+// 1. add() - O(1) on average
+// 2. remove() - O(n) on average
+// 3. get() - O(1) on average
+// 4. set() - O(1) on average
+// 5. contains() - O(n) on average   //Search in the list
+
+
 class _01_ArrayList{
     public static void main(String[] args) {
-        // ArrayList<Integer> listInt = new ArrayList<>();   //list of integers
-        // ArrayList<Float> listFl = new ArrayList<>();   //list of floats
-        // ArrayList<String> listStr = new ArrayList<>();   //list of Strings
-        // ArrayList<Character> listChar = new ArrayList<>();   //list of characters
-        // ArrayList<Boolean> listBool = new ArrayList<>();   //list of Booleans
-        // ArrayList<Object> listObj = new ArrayList<>();   //list of objects
+        // Creation of ArrayList:
+        // ArrayList<type> listName = new ArrayList<>();
+        ArrayList<Integer> listInt = new ArrayList<>();   //list of integers
+        ArrayList<Float> listFl = new ArrayList<>();   //list of floats
+        ArrayList<String> listStr = new ArrayList<>();   //list of Strings
+        ArrayList<Character> listChar = new ArrayList<>();   //list of characters
+        ArrayList<Boolean> listBool = new ArrayList<>();   //list of Booleans
+        ArrayList<Object> listObj = new ArrayList<>();   //list of objects
 
 
         //ArrayList methods:
