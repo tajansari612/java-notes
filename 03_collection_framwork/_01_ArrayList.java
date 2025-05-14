@@ -1,5 +1,8 @@
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Iterator;
+import java.util.List;
+
 
 //ArrayList properties:
 // 1. Dynamic size
@@ -92,7 +95,7 @@ class _01_ArrayList{
 
         //7. iterator()
         System.out.println("-----------------7. iterator() ----------------------------");
-        Iterator<Integer> it = l2.iterator();
+        Iterator<Integer> it = l1.iterator();
         while (it.hasNext()) {
             System.out.println(it.next());
         }
@@ -110,7 +113,7 @@ class _01_ArrayList{
         System.out.println(l1.size());
 
         //10. isEmpty()
-        System.out.println("-----------------10. isEmpty() ----------------------------");
+        System.out.println("----------10. isEmpty() ----------------------------");
         System.out.println(l1.isEmpty());
         l1.add(1);
         l1.add(2);
@@ -151,8 +154,8 @@ class _01_ArrayList{
         l2.add(3);
         l2.add(4);
         l2.add(5);
-        ArrayList<Integer> l3 = new ArrayList<>();
-        l3 = (ArrayList<Integer>) l2.subList(1, 4);   // get the sublist from index 1 to 4
+        List<Integer> l3 = new ArrayList<>();
+        l3 =l2.subList(1, 4);   // get the sublist from index 1 to 4
         System.out.println(l3);
 
         //16. toString()
