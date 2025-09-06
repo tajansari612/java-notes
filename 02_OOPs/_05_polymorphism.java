@@ -67,7 +67,7 @@
 //     }
 // }
 
-public class _04_polymorphism {
+public class _05_polymorphism {
     public static void main(String[] args) {
         
     }

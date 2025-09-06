@@ -30,7 +30,7 @@ class OperatorOverloading {
         System.out.println("Concatenation: " + (str1 + str2)); // String concatenation
     }
 }
-public class _05_compile_time_polymorphism {
+public class _06_compile_time_polymorphism {
     public static void main(String[] args) {
         MathOperation math = new MathOperation();
         System.out.println("Integer addition: " + math.add(5, 10));
