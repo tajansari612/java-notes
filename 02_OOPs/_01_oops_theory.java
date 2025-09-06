@@ -85,6 +85,7 @@
 //Abstraction is the concept of hiding the complex implementation details from the
 // user and only providing the necessary functionality. It focuses on what the
 // object does rather than how it does it.
+//It can be achieved using abstract classes and interfaces.
 
 //6. Encapsulation
 //Encapsulation is the concept of wrapping the data (variables) and code acting on
