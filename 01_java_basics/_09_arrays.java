@@ -16,6 +16,41 @@
 // Stored in Contiguous Memory Locations:
 // Elements are stored sequentially in memory.
 
+//For array of objects
+class Student
+{
+    int rollNo;
+    String name;
+    int age;
+
+    Student(int rollNo, String name, int age) {
+        this.rollNo = rollNo;
+        this.name = name;
+        this.age = age;
+    }
+
+    //Getter methods
+    public int getRollNo() {
+        return rollNo;
+    }
+    public String getName() {
+        return name;
+    }
+    public int getAge() {
+        return age;
+    }
+
+    //Setter methods
+    public void setRollNo(int rollNo) {
+        this.rollNo = rollNo;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+    public void setAge(int age) {
+        this.age = age;
+    }
+}
 
 public class _09_arrays {
     public static void main(String[] args) {
@@ -173,6 +208,14 @@ public class _09_arrays {
         // 5
         // 6
 
+        //Jagged array
+        // A jagged array is an array of arrays where the inner arrays can have different lengths.
+        int [][] arr = new int[3][];  //Jagged array with 3 rows
+        arr[0] = new int[3];  // First row has 3 elements
+        arr[1] = new int[2];  // Second row has 2 elements
+        arr[2] = new int[4];  // Third row has 4 elements
+
+
         // Arrays of Objects:
         // In Java, you can create arrays of objects. Each element in the array is a reference
         // to an object of the specified type.
@@ -182,9 +225,9 @@ public class _09_arrays {
         // or
         // ClassName arrayName[];
         //Example:
-        String[] names;
+        Student[] names;
         // or
-        String names2[];
+        Student names2[];
 
         // Initializing an Array of Objects:
         // To initialize an array of objects in Java, you must allocate memory for the array
@@ -193,7 +236,7 @@ public class _09_arrays {
         // The syntax for initializing an array of objects is as follows:
         // ClassName[] arrayName = new ClassName[size];
         //Example:
-        String[] names3 = new String[3];
+        Student[] names3 = new Student[3];
 
         // Accessing Elements in an Array of Objects:
         // You can access elements in an array of objects using the index of the element.
@@ -201,21 +244,19 @@ public class _09_arrays {
         // The syntax for accessing an element in an array of objects is as follows:
         // arrayName[index];
         //Example:
-        String[] names4 = {"Alice", "Bob", "Charlie"};
-        System.out.println(names4[0]); // Output: Alice
-        System.out.println(names4[1]); // Output: Bob
-        System.out.println(names4[2]); // Output: Charlie
+        Student[] student = new Student[3];
+        student[0] = new Student(1, "Alice", 20);
+        student[1] = new Student(2, "Bob", 21);
+        student[2] = new Student(3, "Charlie", 22);
 
         // Changing Elements in an Array of Objects:
         // You can change the value of an element in an array of objects by assigning a new
         // object to the element using the index of the element.
 
         // The syntax for changing an element in an array of objects is as follows:
-        // arrayName[index] = new ClassName();
         //Example:
-        String[] names5 = {"Alice", "Bob", "Charlie"};
-        names5[0] = "David";
-        System.out.println(names5[0]); // Output: David
+        student[0].setName("David");
+        System.out.println(student[0].getName()); // Output: David
 
         // Iterating Over Elements in an Array of Objects:
         // You can iterate over the elements in an array of objects using a for loop.
@@ -227,15 +268,14 @@ public class _09_arrays {
         //     arrayName[i];
         // }
         //Example:
-        String[] names6 = {"Alice", "Bob", "Charlie"};
-
-        for (int i = 0; i < names6.length; i++) {
-            System.out.println(names6[i]);
+        for (int i = 0; i < student.length; i++) {
+            System.out.println(student[i].getName());
         }
         // Output:
-        // Alice
+        // David
         // Bob
         // Charlie
+
 
     }
 }
