@@ -271,6 +271,10 @@ public class _09_arrays {
         for (int i = 0; i < student.length; i++) {
             System.out.println(student[i].getName());
         }
+        //Enhanced for loop
+        for(Student s : student){
+            System.out.println(s.getName());
+        }
         // Output:
         // David
         // Bob
