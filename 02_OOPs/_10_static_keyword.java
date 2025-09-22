@@ -1,18 +1,38 @@
-// Static keyword in Java is used for memory management primarily. 
-// It can be applied to variables, methods, blocks, and nested classes.
+// The static keyword in Java is a non-access modifier that indicates a member 
+// (variable, method, block, or nested class) belongs to the class itself, rather than 
+// to individual instances (objects) of the class. This means that static members are 
+// shared among all instances of the class and can be accessed without creating an object of that class. 
 
-// When a member is declared static, it belongs to the class rather than
-// to any specific instance of the class. This means that there is only one copy
-// of the static member, regardless of how many objects of the class are created
+// Here's a breakdown of its uses:
 
-// Static members can be accessed directly using the class name without creating
-// an instance of the class. However, static methods can only directly access
-// other static members (variables and methods) of the class.
+// Static Variables (Class Variables):
+// Declared using the static keyword.
+// Shared by all objects of the class; there is only one copy of a static variable for the entire class. 
+// Initialized only once, when the class is loaded into memory. 
+// Useful for representing common properties among all objects, like a company name for employees 
+// or a college name for students.
 
-// Static members are initialized only once at the start of the program execution
-// and remain in memory until the program terminates. This makes static members
-// more memory efficient when you need to share data or behavior across all instances
-// of a class.
+// Static Methods (Class Methods):
+// Declared using the static keyword.
+// Can be called directly using the class name, without creating an object of the 
+// class (e.g., ClassName.staticMethod()).
+// Can only access other static members (variables and methods) of the class directly. 
+// They cannot access non-static (instance-specific) variables or methods without an object reference.
+// The main method in Java is a common example of a static method, as it is the entry point for program execution and needs to be called without an object.
+
+
+// Static Blocks:
+// Used for initializing static variables.
+// Executed automatically once, when the class is loaded into memory, before any static methods 
+// are called or any objects are created.
+
+
+// Static Nested Classes:
+// A nested class declared as static.
+// Unlike non-static inner classes, a static nested class does not require an instance of 
+// the outer class to be created.
+// Can only access static members of the outer class directly. 
+
 
 // Example to illustrate the use of static keyword in Java
 class StaticExample {
