@@ -39,7 +39,7 @@
 // they are inherently thread-safe, allowing multiple threads to share and access them without concurrency 
 // issues.
 
-public class _0101_stringPool{
+public class _101_stringPool{
     public static void main(String[] args){
         String s1 = "example";
         String s2 = "example";
