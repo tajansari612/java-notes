@@ -24,7 +24,7 @@ class Node{
     }
     
 }
-public class _041_CustomLinkedList {
+public class _05_CustomLinkedList {
     public static void main(String[] args) {
         // Node head = new Node(4);
         // Node node1 = new Node(5);
