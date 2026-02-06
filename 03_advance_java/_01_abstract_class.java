@@ -68,8 +68,8 @@ class Cat extends Animal {
 public abstract class _01_abstract_class {
     public static void main(String[] args) {
         // Animal animal = new Animal("Generic Animal"); // This would be an error
-        Dog dog = new Dog("Buddy");
-        Cat cat = new Cat("Whiskers");
+        Animal dog = new Dog("Buddy");
+        Animal cat = new Cat("Whiskers");
 
         dog.makeSound(); // Output: Buddy barks.
         dog.eat();       // Output: Buddy is eating.

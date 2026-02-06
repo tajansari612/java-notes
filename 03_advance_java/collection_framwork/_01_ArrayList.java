@@ -167,5 +167,9 @@ class _01_ArrayList{
         ArrayList<Integer> l4 = (ArrayList<Integer>) l2.clone();
         System.out.println(l4);
 
+        //forEach Loop
+        for (int e : l2) {
+            System.out.print(e+" ");
+        }
     }
 }

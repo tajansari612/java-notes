@@ -166,5 +166,25 @@ class EmployeeNotFoundException extends RuntimeException {
 // printing stack trace without logging
 
 public class _05_Exceptions {
-    
+    public static void main(String[] args) {
+        int a=10;
+        int b=5;
+        int c=0;
+        int[] arr = {1,2,3,4};
+        String str = null;
+        try {
+            c = a/b;
+            System.out.println(arr[2]);
+            System.out.println(arr[3]);
+            System.out.println(str.length());
+
+        } catch (ArithmeticException e) {  //arithmetic exception because we are doing arithmetic operation
+            System.out.println("Divide by zero");
+        } catch(ArrayIndexOutOfBoundsException e){
+            System.out.println("Array index out of bound!");
+        } catch(Exception e){
+            System.out.println("Unkwon exception thrown!");
+        }
+        System.out.println("Result: "+c);
+    }
 }
