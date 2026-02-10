@@ -117,3 +117,22 @@ class _07_Thread{
         
     }
 }
+
+// Multithreading vs Parallel Stream
+// Multithreading                  Parallel Stream
+// Manual thread control           Automatic
+// More flexible                   Simpler
+// Complex                         Easy
+// Best for custom logic           Best for data processing
+
+// Advantages of Multithreading
+// Faster execution
+// Better CPU utilization
+// Responsive applications
+// Efficient resource sharing
+
+// Disadvantages
+// Complex code
+// Deadlocks
+// Race conditions
+// Debugging difficulty
